@@ -1,0 +1,891 @@
+#1 #SHORT HAND IF ELSE
+
+"""#1
+a = 100
+b = 30
+
+print("B") if b>a else print("A")
+
+#2
+a = 10
+b = 100
+
+if not a>b:
+    print("b is greater than a ")
+
+#3
+for x in "yusuf faraaz":
+    print(x)"""
+
+#2 #PRINTING ODD AND EVEN NUMBERS ANBD ADDING THEM
+
+"""num1 = int(input("enter the first number : "))
+num2 = int(input("enter secoond number : "))
+add1 = 0
+
+while num1 < num2:
+     num1 = num1+1
+     if num1%2==0:
+          print(num1)
+          add1 = add1+num1
+print(add1)
+
+num3 = int(input("enter first numbeer : "))
+num4 = int(input("enter second number : "))
+add2 = 0
+
+while num3 < num4:
+     num3 = num3+1
+     if num3%2!=0:
+          print(num3)
+          add2 = add2+num3
+print(add2)"""
+
+#3 #PRINTING STRING IN REVERSE
+
+"""name = "yusuf faraaz"
+print(name[::-1])"""
+
+#4 #FACTORIAL
+
+"""num1 = int(input("enter first number : "))
+num2 = int(input("enter second number : "))
+fact = 1
+
+for i in range(num1 , num2+1):
+     fact = fact*i
+print(fact)"""
+
+#5 #LEAP YEAR
+
+"""year = int(input("enter the year : "))
+
+if year %4 == 0:
+     print(year , "is a leap year")
+else:
+     print(year , "is not a leap year")"""
+
+#6 #ADDING ONE CHARACTER TO NEXT LINE
+
+"""string = "12345"
+index = 0
+
+for i in string:
+     print(string[0:index+1])
+     index = index+1"""
+
+#GETTING INPUT FROM USER FOR THE ABOVE PROGRAM
+
+"""inputstring = input("Enter a string : ")
+index = 0
+
+for i in inputstring:
+     print(inputstring[0 : index+1])
+     index = index + 1"""
+
+#7 #SOME BASIC OPERATIONS ON STRING
+
+"""name = input("Enter your name : ")
+print(name[3])
+length = len(name)
+lengthdiv = len(name)//2
+print("Length of the string : " , length)
+print("Division of Length of the string : " , lengthdiv)
+print("Middle character of the string : " , name[lengthdiv])"""
+
+
+#8 #PALINDROME
+
+#PALINDROME
+
+"""pstr = input("Enter a string : ")
+
+if pstr == pstr[::-1]:
+    print(pstr , "is a palindrome")
+
+else:
+    print(pstr , "not a palindrome")"""
+
+#PALINDROME FOR NUMBERS
+
+"""num = int(input("enter a number : "))
+temp = num
+rem = 0
+while num >0:
+    rev = num%10
+    rem = rem*10+rev
+    num = num//10
+    print(rem)
+if temp==rem:
+    print("It is a palindrome")
+else:
+    print("IT IS not a palindrome")"""
+
+#9 PRINTING NUMBERS IN SEQUENCE
+    
+"""for num in range(10):
+    for i in range(num):
+        print(num , end = "")
+    print("\n")"""
+
+#10 OPERATIONS ON LISTS , SETS AND TUPLES
+
+"""#1
+x = ["apple" , "banana" , "cherry"]
+y = ["grapes" , "orange" , "watermelon"]
+print(x is y)
+
+#2
+x = ["apple" , "banana" , "cherry"]
+y = ["apple" , "banana" , "cherry"]
+print(x == y)
+
+#3
+x = ["apple" , "banana" , "cherry"]
+x.reverse()
+print(x)
+
+#4
+x = ["apple" , "orange" , "grapes"]
+x.pop(2)
+print(x)
+
+#5
+x = ["apple" , "banana" , "orange"]
+x.remove("apple")
+print(x)
+
+#6
+x = ["car" , "bike" , "plane" , "truck"]
+x.append("boat")
+print(x)
+
+#7
+thisset={"mango","banana","muskmelon"}
+print("banana" not in thisset)
+
+#8
+tset = {"man" , "women" , 1 , 2 , 3 , "car" , "bike"}
+print(tset)
+
+#9
+tdict = {"name" : "yusuf" , "age" : "23" , "year" : 2023}
+tdict["year"] = 2024
+print(tdict)
+
+#10
+tdict = {"name" : "yusuf" , "age" : "23" , "year" : 2023}
+x = tdict.values()
+print(x)"""
+
+#11 #PATTERN
+
+"""shootingstar ="++++++++++++++++++++++++*"
+index=0
+for i in shootingstar:
+    print(shootingstar[0:index+1])
+    index+=1"""
+
+#12 #SALARY OF EMPLOYEES BASED ON AGE AND GENDER
+
+
+"""age = int(input("Enter Your Age : " ))
+gender = input("Enter Your Gender : ")
+
+if (age >=18) & (age <=30) & (gender == "male"):
+    print(gender , age , "\nYour salary is 25,000")
+
+elif (age >=18) & (age <=30) & (gender == "female"):
+    print(gender , age , "\nYour salary is 27,000")
+
+elif (age >=31) & (age <=40) & (gender == "male"):
+    print(gender , age , "\nYour salary is 30,000")
+
+elif (age >=31) & (age <=40) & (gender == "female"):
+    print(gender , age , "\nYour salary is 32,000")
+    
+else:
+    print("INAPPROPRIATE AGE OR GENDER")"""
+
+#13 #BANK ACCOUNT STATEMENT PROGRAM
+
+"""for i in range(10):
+    print("Enter 1 for Account details")
+    print("Enter 2 for Account Balance")
+    print("Enter 3 for Cash Deposit")
+    print("Enter 4 for Csah Withdrawal")
+
+    choice = int(input("Enter Your Number : "))
+
+    if choice == 1:
+        print("**ACCOUNT DETAILS**")
+        print("Nmae : Md Yusuf Faraaz")
+        print("Gender : Male")
+        print("Account Number : 1342666512787")
+
+    elif choice == 2:
+        print("**Account Balance**")
+        balance = 2000
+        print("Your Bank Balance : " , balance)
+
+    elif choice == 3:
+        print("**Cash Deposit**")
+        print("Bank Balance : " , balance)
+        depositcash = int(input("Enter Amount To Deposit : "))
+        balance = balance + depositcash
+        print("Your Total Bank Balance After Deposit Is : " , balance)
+
+    elif choice == 4:
+        print("**Cash Withdrawal**")
+        print("Bank Balance : " , balance)
+        withdrawcash = int(input("Enter Amount To Withdraw : "))
+        balance = balance - withdrawcash
+        print("Your Total Bank Balance After Withrawal Is : " , balance)
+    
+    else:
+        print("INVALID INPUT")"""
+
+#14 #METHODS
+
+"""#1
+def name(name):
+    print("HELLO" , name , "How Are You")
+
+name("yusuf")
+
+#2
+def doc(name):
+    """"""This is a DOCSTRING""""""
+    return name
+
+print(doc._doc_)
+print(doc("yusuf"))
+
+#3
+
+def plus(a , b):
+    print(a+b)
+plus(3,4)"""
+
+#15 LAMBDA FUNCTIONS
+
+"""#1
+x = lambda y : y +2
+print(x(10))
+
+#2
+l = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8]
+l1 = list(filter(lambda x : (x%2 ==0) , l))
+print(l1)
+
+#3
+k = [1 , 2 , 3]
+for i in map (lambda z : z+1 , k):
+    print(i)"""
+
+#16 #PRIME NUMBERS
+
+"""num = int(input("Enetr a number : "))
+
+for i in range(2 , num):
+    if num%i == 0:
+        print(num , "is not a prime number")
+        break
+    else:
+        print(num , "is a prime number")
+        break"""
+
+#17 #PRINTING YEAR AND MONTH USING CALENDAR MODULE
+
+"""import calendar
+
+y = int(input("enter year : "))
+m = int(input("enter month : "))
+
+print(calendar.month(y , m))"""
+
+#18 #BREAK AND CONTINUE
+
+"""#1
+i = 0
+while i < 10:
+    i = i+1
+    if i == 4:
+        break
+    print(i)
+
+#2
+i = 0
+while i < 10:
+    if i ==4:
+        continue
+    print(i)
+
+#3
+for i in range(0 , 10):
+    if i == 4:
+        break
+    print(i)
+
+#4
+for i in range(0 , 10):
+    if i == 4:
+        continue
+    print(i)"""
+
+#19 # SOME LOGICAL PROGRAMS
+
+"""#1
+def revstring(rev):
+    return rev[::-1]
+print(revstring("yusuf"))
+
+#2
+def maxnum(list):
+    return max(list)
+
+print(maxnum([1 , 3 , 40 , 6 , 7]))
+
+#3
+def sortnum(i):
+    print(sorted(i))
+sortnum((12 , 20 , 13 , 1 , 9 , 0))
+
+#4
+def mergelist(list1 , list2):
+    print(list1+list2)
+
+mergelist([1 , 2 , 3] , [4 , 5 , 6])"""
+
+#20 #FILE HANDLING
+
+#1
+"""with open ("filehandling.txt" , "w") as f:
+    f.write("first line written in idle\n")
+    f.write("second line written in idle\n")
+    f.write("Third line written in idle\n")
+    
+with open("filehandling.txt" , "r") as f:
+    print(f.read())"""
+
+#2
+"""with open ("filehandling.txt" , "a") as f:
+    f.write("fourth line written using append function\n")
+with open ("filehandling.txt" , "r") as f:
+    print(f.read())"""
+
+
+
+#21 MULTIPLICATION PROGRAM
+
+"""num = int(input("Enter The Nnumber You Want To Multiple : "))
+count = int(input("Enter Till Which Number You Want To Multiple : "))
+
+for i in range(1 , count+1):
+    mul = i*num
+    print(num , "*" , i , "=" , mul)"""
+
+#22 #OOPS
+
+"""#1
+class myclass:
+    x = 15
+    
+obj = myclass
+print(obj.x)
+
+#2
+class person:
+    def _init_(self , name , age):
+        self.NAME = name
+        self.AGE = age
+        
+p = person("yusuf" , 23)
+print(p.NAME)
+print(p.AGE)
+
+#3
+class person1:
+    def _init_(self , name , age):
+        self.NAME1 = name
+        self.AGE1 = age
+
+    def _str_(self):
+        return f"My Name Is : {self.NAME1} , And Age Is ({self.AGE1})"
+
+p1 = person1("Yusuf" , 23)
+print(p1)
+
+
+#4
+class person2:
+    def _init_(self , name , age):
+        self.NAME2 = name
+        self.AGE2 = age
+
+    def myfunction(self):
+        print("My Name is" , self.NAME2 , "And My Age Is" , self.AGE2)
+
+p2 = person2("Yusuf" , 23)
+p2.myfunction()
+
+#5
+class myinfo:
+    def _init_(self , name , age):
+        self.name = name
+        self.age = age
+
+    def myfunc(self):
+        print (f"{self.name} , ({self.age})")
+
+i = myinfo("yusuf" , 23)
+i.myfunc()
+#to delete the onbject
+del i
+
+#6
+def outerfunction():
+    a = 20
+
+    def innerfunction():
+        b = 30
+        print(b)
+    innerfunction()
+    print(a)
+
+outerfunction()
+c = 10
+print(c)
+
+#7
+class complexnumbers:
+    def _init_(self , i , j):
+        self.i = i
+        self.j = j
+
+    def getdata(self):
+        print(f"{self.i} + ({self.j}j)")
+
+c1 = complexnumbers(2 , 3)
+c1.getdata()
+    
+c2 = complexnumbers(0 , 3)
+c2.k = 20
+print((c2.i , c2.j , c2.k))"""
+
+#23 #INHERITANCE
+
+"""#1
+class person:
+    def _init_(self , name , age):
+        self.name = name
+        self.age = age
+
+    def myfunction(self):
+        print("Your Name Is : " , self.name , "\nYour Age Is : " , self.age)
+
+class inheritperson(person):
+    pass
+
+p = inheritperson("yusuf" , 23)
+p.myfunction()
+
+
+#2
+class info:
+    def _init_(self , name , age):
+        self.name = name
+        self.age = age
+
+    def printinfo(self):
+        print("My name is " , self.name , "my age is :" , self.age)
+        
+class inheritinfo(info):
+    def _init_(self , name , age):
+        super()._init_(name , age)
+
+inf = inheritinfo("Yusuf" , 23)
+inf.printinfo()
+
+#3
+class information:
+    def _init_(self , name , age):
+        self.name = name
+        self.age = age
+    def printinformation(self):
+        print("Name Is : " , self.name , "Age is : " , self.age , "Gender Is : " , self.gender)
+
+class information1(information):
+    def _init_(self , name , age):
+        super()._init_(name , age)
+        self.gender = "male"
+
+info = information1("Yusuf" , 23)
+info.printinformation()
+
+#4
+class in1:
+    def _init_(self , name , age , gender):
+        self.name = name
+        self.age = age
+        self.gender = gender
+
+    def printin1(self):
+        print(self.name , "\n" , self.age , "\n" , self.gender , "\n" , self.dob)
+
+class in2(in1):
+    def _init_(self , name , age , gender , dob):
+        super()._init_(name , age , gender)
+        self.dob = dob
+info1 = in2("yusuf" , 23 , "male" , 28)
+info1.printin1()
+
+#5
+class myname:
+    def _init_(self , fname , lname):
+        self.fname = fname
+        self.lname = lname
+    def printname(self):
+        print("my first name : " , self.fname , "my last name : " , self.lname)
+
+class mypd(myname):
+    def _init_(self , fname , lname , age , gender , dob):
+        super()._init_(fname , lname)
+        self.age = age
+        self.gender = gender
+        self.dob = dob
+
+    def printmyinfo(self):
+        print(self.fname , self.lname , self.age , self.gender , self.dob)
+
+pdo = mypd("yusuf" , "faraaz" , "male" , 23 , 28)
+pdo.printname()
+pdo.printmyinfo()"""
+
+#24 #POLYMORPHISM
+
+"""#1
+class car:
+    def _init_ (self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("move")
+
+class boat:
+    def _init_(self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("sail")
+
+class plane:
+    def _init_(self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("fly")
+
+c1 = car("ford" , "mustang")
+b1 = boat("ibiza" , "tourist21")
+f1 = plane("boeing" , "717")
+
+for x in (c1 , b1 , f1):
+    x.move()
+
+#2
+class vehicle:
+    def _init_(self , brand , model):
+        self.brand = brand
+        self.model = model
+        
+    def move(self):
+        print("move !!!")
+        
+class car(vehicle):
+    pass
+
+class boat(vehicle):
+    def move(self):
+        print("sail !!!")
+
+class plane(vehicle):
+    def move(self):
+        print("fly !!!")
+
+c2 = car("ford" , "mustang")
+b2 = boat("ibiza" , "tourist21")
+p2 = plane("boeing" , "717")
+
+for x in (c2 , b2 , p2):
+    print(x.brand)
+    print(x.model)
+    x.move()"""
+
+#25 #ABSTRACTION
+
+"""1.
+class animal:
+    def sound(self):
+        pass
+
+class dog(animal):
+    def sound(self):
+        return "woof"
+    
+class cat(animal):
+    def sound(self):
+        return "meow"
+
+mydog = dog()
+mycat = cat()
+
+print("dog sound : " , mydog.sound())
+print("cat sound : " , mycat.sound())
+
+2. 
+from abc import ABC , abstractmethod
+
+class vehicle(ABC):
+
+    @abstractmethod
+    def go(self):
+        pass
+
+    @abstractmethod
+    def stop(self):
+        pass
+
+class car(vehicle):
+    def go(self):
+        print("you drive the car")
+
+    def stop(self):
+        print("you can stop")
+
+car = car()
+car.go()
+car.stop()"""
+
+#26 #ENCAPSULATION
+
+"""#Encapsulation is about protecting data inside a class by using private variables
+#And exposing methods to access or update them
+class bankaccount:
+    def _init_(self , balance):
+        self.balance = balance
+
+    def deposit(self , amount):
+        self.balance = self.balance + amount
+
+    def getbalance(self):
+        return self.balance
+
+myaccount = bankaccount(100)
+print(myaccount.balance)
+myaccount.deposit(100)
+print(myaccount.getbalance())"""
+
+#27 #OPERATOR OVERLOADING
+
+"""#1
+class person:
+    def _init_ (self , name , age):
+        self.name = name
+        self.age = age
+
+    def _eq_ (self , other):
+        return self.age == other.age
+
+    def _gt_ (self , other):
+        return self.age > other.age
+
+    def _lt_ (self , other):
+        return self.age < other.age
+
+    def _ne_ (self , other):
+        return self.age != other.age
+
+    def _ge_ (self , other):
+        return self.age >= other.age
+
+    def _le_(self , other):
+        return self.age <= other.age
+
+d1 = person("yusuf" , 22)
+d2 = person("faraaz" , 23)
+d3 = person("lavendar" , 20)
+d4 = person("dinosaur" , 25)
+
+print(d1 == d2)
+print(d3 > d4)
+print(d3 < d4)
+print(d1 != d2)
+print(d4 >= d1)
+print(d3 <= d4)
+
+
+#2
+class vector:
+    def _init_ (self , a , b):
+        self.a = a
+        self.b = b
+
+    def _str_(self):
+        return f"({self.a} {self.b})"
+
+    def _add_(self , other):
+        return vector (self.a + other.a , self.b + other.b)
+
+v1 = vector(2 , 0)
+v2 = vector(1 , 11)
+print(v1+v2)
+
+#3
+class shape:
+    def _init_ (self , a , b):
+        self.a = a
+        self.b = b
+
+    def _str_(self):
+        return f"{self.a} , {self.b}"
+
+    def _gt_(self , other):
+        return (self.a , self.b) > (other.a , other.b)
+
+s1 = shape(10 , 20) > shape(1 , 100)
+print(s1)
+
+
+#4
+class shape:
+    def _init_ (self , x , y):
+        self.x = x
+        self.y = y
+
+    def _str_ (self):
+        return f"{self.x} {self.y}"
+
+    def _lt_ (self , other):
+        self.mag = (self.x) + (self.y)
+        other.mag = (other.x) + (other.y)
+        return self.mag < other.mag
+
+print(shape(100 , 10) < shape(20 , 300))"""
+
+#28 #MATH MODULE
+
+import math
+
+"""print(math.sqrt(64))
+
+print(math.pi)
+
+print(math.ceil(5.5))
+
+print(math.floor(8.8))
+
+print(abs(-7.5))"""
+
+#29 #JSON
+
+"""import json
+
+#CONVERT FROM JSON TO PYTHON
+#1
+x = '{"name" : "yusuf" , "age" : 23 , "gender" : "male"}'
+y = json.loads(x)
+print(y)
+
+#2
+#CONVERT FROM PYTHON TO JSON
+x = {"name" : "yusuf" , "age" : 23 , "gender" : "male"}
+y = json.dumps(x)
+y1 = json.dumps(x["age"])
+print(y)
+print(y1)
+
+#3
+x = {
+  "name": "John", "age": 30, "married": True, "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+x = json.dumps(x)
+print(x)"""
+
+#30 #EXCEPTION HANDLING
+
+"""#1
+try:
+    a = 10
+    b = "string"
+    x = a+b
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except:
+    print("something else went wrong")
+
+#2
+try:
+    x = 10
+    y = 20
+    print(x+y)
+
+except:
+    print("something is wrong")
+finally:
+    print("the program is executed")
+
+#3
+try:
+    print(i)
+except:
+    print("something went wrong")
+finally:
+    print("the try except is finished")
+
+#4
+try:
+    with open("filehandling.txt" , "w") as f:
+        f.write("line written from python file handling")
+        f.write("\nline written from python file handling")
+        f.write("\nline written from python file handling")
+        f.write("\nline written from python file handling")
+    with open("filehandling.txt" , "r") as f:
+        print(f.read())
+
+        try:
+            with open("filehandling.txt" , "r") as f:
+                print(f.read())
+
+        except:
+            print("something went wrong while opening the file")
+except:
+    print("something went wrong while writing to file")"""
+
+"""#5
+
+if x < 1:
+    raise Exception("sorry no numbers below zero")
+
+x = 12
+if not type(x) is int:
+    raise Exception("only integers are allowed")
+
+def kelvintofahrenhite(temprature):
+   assert (temprature >=0 ), "colder than absolute zero"
+   return ((temprature - 273)*1.8)+32
+
+print(kelvintofahrenhite(273))
+print(int(kelvintofahrenhite(505.78)))
+print(kelvintofahrenhite(-15))"""

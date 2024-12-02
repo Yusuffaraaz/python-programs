@@ -1,0 +1,830 @@
+#1 #IMPORTING MODLE FROM ANBOTHER FILE
+
+"""import addfile
+addfile.add(4,5)"""
+
+#2 #PRINTING ODD AND EVEN NUMBERS ANBD ADDING THEM
+
+"""num1 = int(input("Enter first number : "))
+num2 = int(input("Enter second number : "))
+add1 = 0
+
+i = num1
+
+while i < num2:
+    i = i+1
+    if i % 2 ==0:
+        print(i)
+        add1 = add1+i
+print(add1)
+
+num3 = int(input("Enter a number : "))
+num4 = int(input("Enter second number : "))
+add2 = 0
+
+j = num3
+
+while j < num4:
+    j = j+1
+    if j %2 !=0:
+        print(j)
+        add2 = add2+j
+print(add2)"""
+
+#3 #ADDING ONE CHARACTER TO NEXT LINE 
+
+"""string1 = [1 , 2 , 3 , 4 , 5]
+index = 0
+
+for i in string1:
+    print(string1[0:index+1])
+    index+=1"""
+
+#4 #GETTING INPUT FROM USER FOR THE ABOVE PROGRAM
+"""string = input("Enter a string : ")
+index = 0
+
+for i in string:
+    print(string[0:index+1])
+    index+=1"""
+
+#5 #FACTORIAL
+
+"""num = int(input("Enter a number : "))
+fact = 1
+
+for i in range(1 , num+1):
+    fact = fact*i
+print(fact)"""
+
+#6 #SOME BASIC OPERATIONS ON STRING
+
+"""name = input("Enter your name : ")
+print(name[3])
+length = len(name)//2
+print("Length of the string : " , length)
+print("Middle character of the string : " , name[length])"""
+
+#7 #SALARY OF EMPLOYEES BASED ON AGE AND GENDER
+
+"""age = int(input("Enter your age : "))
+gender = str(input("Enter gender :"))
+
+if (age>=18) & (age <=30) & (gender == "male"):
+    print(gender , age , "\nYour daily wage is 700")
+elif (age>=18) & (age<=30) & (gender == "female"):
+        print(gender , age , "\nYour daily wage is 750")
+elif (age>=30) & (age <=40) & (gender == "male"):
+    print(gender , age , "\nYour daily wage is 800")
+elif (age>=30) & (age <=40) & (gender == "female"):
+    print(gender , age , "\nYour daily wage is 850")
+else:
+    print("Inappropriate age")"""
+
+#8 #BANK ACCOUNT STATEMENT PROGRAM
+
+"""for i in range(1 , 100): 
+    print("Enter 1 for Account details")
+    print("Enter 2 for Account Balance")
+    print("Enter 3 for Cash Deposit")
+    print("Enter 4 for Cash Withdreawal")
+    
+    choice = int(input("Enter number : "))
+
+    if choice == 1:
+        print("Account Details")
+        print("Name : Yusuf faraaz")
+        print("Account number : 9878923624598907")
+
+    elif choice == 2:
+        bal = 1000
+        print("Account balance")
+        print("ACCOUNT BALANCE : " ,  bal)
+
+    elif choice == 3:
+        bal = 1000
+        print("Cash Deposit")
+        print("ACCOUNT BALANCE : " , bal)
+        dep = int(input("Enter cash to deposit : "))
+        tot = bal+dep
+        print("TOTAL AVAILABLE CASH = " , tot)
+
+    elif choice == 4:
+        bal = tot
+        print("Cash withdrawal")
+        print("ACCOUNT BALANCE : " , bal)
+        wit = int(input("Enter cash to withdraw : "))
+        tota = bal - wit
+        print("TOTAL AVAILABLBLE CASH = " ,  tota)
+
+    else:
+        print("INVALID INPUT")"""
+
+#9 ##METHODS
+
+"""def test(name):
+    """""""This is DOCSTRING""""""
+    print("Hello" , name , "have a nice day")
+
+print(test._doc_)
+test("yusuf")"""
+
+"""def plus(a , b):
+    c = a+b
+    print(c)
+
+plus(3,4)"""
+
+"""def value(n):
+    if n>=0:
+        return n 
+    else:
+        return n
+
+print(value(-4))"""
+
+#10 #LAMBDA FUNCTIONS
+
+"""#1
+x = lambda y : y*6
+print(x(2))
+
+#2
+l = [1 ,2 ,3 ,4 ,5, 6, 7, 8 , 9 , 10]
+l1 = list(filter(lambda x : (x%2==0) , l))
+print(l1)
+
+#3
+z = [1, 2, 3]
+for i in map(lambda a : a+1 , z):
+    print(i)"""
+
+
+#11 #PRIME NUMBERS
+
+"""num = int(input("Enter a number : "))
+
+for i in range (2 , num):
+    if num % i == 0:
+        print(num , "is not a prime number")
+        break
+    else:
+        print(num , "is a prime number")
+        break"""
+
+#12 #PRINTING YEAR AND MONTH USING CALENDAR MODULE
+
+"""import calendar
+
+y = int(input("enter year : "))
+m = int(input("enter month : "))
+
+print(calendar.month(y , m))"""
+
+#13 #FILE HANDLING
+
+"""#1
+with open ("test.txt" , 'w') as f:
+    f.write("first line\n")
+    f.write("this is my file\n")
+    f.write("this is third lilne\n")
+
+with open("test.txt" , 'r') as f:
+    print(f.read())
+
+#2
+with open ("file.txt" , "w") as f:
+    f.write("hello this is the text writtrn from the python file pre defined method"
+            "\n rhis is the secoond line")
+f = open("file.txt" , "a")
+f.write("\nthis text is added with the predefined method append")
+f = open("file.txt" , "r")
+print(f.read())
+f = open("file.txt" , "r")
+for line in f:
+    print(line)"""
+
+#14 #MULTIPLICATION PROGRAM
+
+"""num = int(input("Enter a number : "))
+count = int(input("Enter the number till you want to get multiple : "))
+
+for i in range(1 , count+1):
+    mul = i*num
+    print(i , "*" , num , "=" , mul)"""
+
+#14 #SHORT HAND IF ELSE STATEMENT and some list operations
+
+"""a = 33
+b = 100
+
+print("B") if b>a else print("A")"""
+
+
+"""a = 10
+b = 100
+
+if not a>b:
+    print("b is greater than a")"""
+    
+"""a = 33
+b = 200
+
+if b >a:
+    pass"""
+
+"""for x in "bsnana":
+    print(x)"""
+
+"""fruits1 = ["apple" , "banana" , "cherry"]
+
+for y in fruits1:
+    if y == "banana":
+        continue
+    print(y)"""
+
+    
+"""fruits = ["apple" , "banana" , "cherry"]
+
+for i in fruits:
+     if i == "banana":
+        break
+    print(i)"""
+
+#15 BREAK AND CONTINUE
+
+"""i = 0
+while i < 10:
+    i+=1
+    if i == 4:
+        continue
+    print(i)
+
+i = 0
+while i < 10:
+    i = i+1
+    if i ==4:
+        break
+    print(i)"""
+
+#16 #SOME LOGICAL PROGRAMS
+
+
+"""def revstr(s):
+    return s[::-1]
+    
+print(revstr("HELLO"))"""
+
+"""def maxnum(list):
+    return max(list)
+
+print(maxnum([1 , 4 , 5 , 6 , 10 , 2]))"""
+
+"""def sortnum(l):
+    print("The Sorted Order is : " , sorted(l))
+
+sortnum([3 , 4 , 56 ,7, 8, 1])"""
+
+"""def mergelist(l1 , l2):
+    print("The Merged List Is : " , sorted(l1+l2))
+
+mergelist([3 , 4 , 6 , 7] , [2 , 9 , 0 ,17])"""
+
+"""def merge_sort(arr):
+    if len(arr)>1:
+        mid = len(arr)//2
+    L = arr[:mid]
+    R = arr[mid:]
+    
+merge_sort([1 , 5 , 6 , 9 , 2])
+merge_sort([7 , 8 , 4 , 2 , 5])
+
+i = j = k = 0
+
+while i < len(L) and j < len(R):
+    if L[i] < R[i]:
+        arr[k] = L[i]
+    i = i+1
+
+else:
+    arr[k] = R[j]
+    j+=1
+    k+=1
+
+while i < len(L):
+    arr[k] = L[i]
+i +=1
+k +=1
+
+while j < len(R):
+    arr[k] = R[j]
+j+=1
+k+=1"""
+
+#17 ##OOPS
+
+"""#1
+class myclass:
+    x = 5
+    
+c = myclass
+#print(c.x)
+
+#2
+class person:
+    def _init_(self , name , age):
+        self.name1 = name
+        self.age1 = age
+        
+p = person("yusuf" , 22)
+#print(p.name1)
+#print(p.age1)
+
+#3
+class person1:
+    def _init_(self , name , age):
+        self.name1 = name
+        self.age1 = age
+
+    def _str_(self):
+        return f"{self.name1} , ({self.age1})"
+
+p1 = person1("yusuf" , 22)
+#print(p1)
+
+#4
+class person2:
+    def _init_ (self , name , age):
+        self.name2 = name
+        self.age2 = age
+
+    def myfunc(a):
+        print("Hello "  , a.name2 , " , Your age is : " , a.age2)
+
+p2 = person2("yusuf" , 22)
+#p2.myfunc()
+
+#5
+class my_info:
+    def _init_(self , name , age):
+        self.myname = name
+        self.myage = age
+
+    def func(self):
+        print(f"{self.myname} , ({self.myage})")
+
+i = my_info("YUSUF FARAAZ" , 22)
+i.myage = 23
+#i.func()
+del i
+
+#6
+a = 2
+#print(id(2))
+b = 2
+#print(id(2))"""
+
+
+"""#7
+def outer_function():
+    a = 20
+    
+    def inner_function():
+        a = 30
+        print("a = " , a)
+        
+    inner_function()
+    print("a = " , a)
+    
+
+outer_function()
+a = 10
+print("a = ", a)"""
+
+
+"""#8
+class complexnumber:
+    def _init_ (self , r, i ):
+        self.real = r
+        self.imag = i
+
+    def getdata(self):
+        print( f"{self.real} + {self.imag}j")
+    
+c1 = complexnumber(2 , 5)
+c1.getdata()
+
+c2 = complexnumber(0 , 3)
+c2.attr = 30
+
+print((c2.real , c2.imag , c2.attr))"""
+
+"""#9
+class dog:
+    def _init_ (self ,name):
+        self.name = name
+
+    kind = "canine"
+
+x = dog("fido")
+y = dog("buddy")
+
+print(x.name)
+print(x.kind)
+print(y.name)
+print(y.kind)"""
+
+"""class rectangle:
+    def _init_(self , width , height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width*self.height
+class circle:
+    def _init_(self , radius):
+        self.radius = radius
+    def area(self):
+        return self.radius**2
+class triangle:
+    def _init_(self , base , height):
+        self.base = base
+        self.height = height
+    def area(self):
+        return 0.5*self.base*self.height
+rect = rectangle(3 , 4)
+circ = circle(3)
+tria = triangle(2 , 6)
+for x in (rect , circ , tria):
+    print(x.area())"""
+
+
+#18 #INHERITANCE
+
+"""#1
+class person:
+    def _init_ (self , name , age):
+        self.name = name
+        self.age = age
+
+    def printself(self):
+        print("YOUR NAME IS:" , self.name ,"AND YOURA AGE IS:"  , self.age)
+        
+class person1(person):
+    pass
+
+cp = person("YUSUF" , 22)
+#print(cp.name)
+#print(cp.age)
+#cp.printself()
+
+
+#2
+class info:
+    def _init_ (self , name , msg):
+        self.name = name
+        self.msg = msg
+
+    def printinfo(self):
+        print("Your name is given : " , self.name , "\nyour message is : " , self.msg)
+
+class info1(info):
+    def _init_ (self , name , msg):
+        super()._init_(name , msg)
+
+y = info1("yusuf" , "have a nice day")
+#y.printinfo()
+
+#3
+class information:
+    def _init_ (self , name , age):
+        self.name = name
+        self.age = age
+    def printinformation(self):
+        print(self.name , self.age , self.gender)
+
+class information1(information):
+    def _init_ (self , name , age):
+        super()._init_(name , age)
+        self.gender = "male"
+
+b = information1("yusuf" , 22)
+#b.printinformation()
+
+#4
+class in1:
+    def _init_ (self , fname , lname):
+        self.fname = fname
+        self.lname = lname
+
+    def printin1(self):
+        print(self.fname , self.lname)
+
+class in2(in1):
+    def _init_ (self , fname , lname , year):
+        super()._init_(fname , lname)
+        self.graduationyear = year
+    def welcome(self):
+        print("Welcome" , self.fname , self.lname , "To the class of " , self.graduationyear)
+        
+i1 = in2("yusuf" , "faraaz" , 2023)
+#i1.printin1()
+#i1.welcome()
+
+#5
+class studentname:
+    def _init_ (self , fname , lname):
+        self.fname = fname
+        self.lname = lname
+    def printname (self):
+        print("name" , self.fname , self.lname)
+
+class studentdetails(studentname):
+    def _init_ (self , fname , lname , age , gender):
+        studentname._init_(self , fname , lname)
+        self.age = age
+        self.gender = gender
+    def printdetails(self):
+        print("Welcome" , self.fname , self.lname , "Your age is" , self.age , "Your gender is" , self.gender)
+
+xx = studentdetails("Yusuf" , "Faraaz" , 22 , "male")
+#xx.printdetails()"""
+
+#19 #POLYMORPHISM
+
+"""#1
+class car:
+    def _init_ (self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Drive !!!")
+
+class boat:
+    def _init_ (self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Sail !!!")
+
+class plane:
+    def _init_ (self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Fly !!!")
+
+car1 = car("ford" , "mustang")
+
+boat1 = boat("ibiza" , "tourist21")
+
+plane1 = plane("boeing" , "717")
+
+for x in (car1 , boat1 , plane1):
+    x.move()"""
+
+
+#2
+"""class vehicle:
+    def _init_ (self , brand , model):
+        self.brand = brand
+        self.model = model
+
+    def move(self):
+        print("Move !!!")
+
+class car(vehicle):
+    pass
+
+class boat(vehicle):
+    def move(self):
+        print("sail !!!")
+
+class plane(vehicle):
+    def move(self):
+        print("Fly !!!")
+
+c1 = car("ford" , "mustang")
+
+b1 = boat("ibiza" , "touring21")
+
+p1 = plane("boeing" , "717")
+
+for x in (c1 , b1 , p1):
+    print(x.brand)
+    print(x.model)
+    x.move()"""
+
+
+#20 #OPERATOR OVERLOADING
+
+"""#1
+class person:
+    def _init_ (self , name , age):
+        self.name = name
+        self.age = age
+
+    def _eq_ (self , other):
+        return self.age == other.age
+
+    def _gt_ (self , other):
+        return self.age > other.age
+
+    def _lt_ (self , other):
+        return self.age < other.age
+
+    def _ne_ (self , other):
+        return self.age != other.age
+
+    def _ge_ (self , other):
+        return self.age >= other.age
+
+    def _ne_ (self , other):
+        return self.age != other.age
+
+
+d1 = person("yusuf" , 22)
+d2 = person("faraaz" , 23)
+d3 = person("arun" , 24)
+d4 = person("vimal" , 22)
+
+print(d1 == d2)
+print(d1 > d2)
+print(d1 < d3)
+print(d2 != d2)
+print(d2 >= d4)
+print(d1 != d4)"""
+
+"""#2
+class vector:
+    def _init_(self , a , b):
+        self.a = a
+        self.b = b
+
+    def _str_ (self):
+        return f"({self.a} {self.b})"
+
+    def _add_ (self , other):
+        return vector(self.a + other.a , self.b + other.b)
+
+v1 = vector(2 , 10)
+v2 = vector(2 , 11)
+print(v1 + v2)"""
+
+
+"""#3
+a1 =10
+a2 = 10
+print(a1._add_(a2))
+
+b1 = 2
+b2 = 4
+print(b1._pow_(b2))
+
+c1 = 22
+c2 = 10
+print(c1._truediv_(c2))
+
+d1 = 100
+d2 = 40
+print(d1._rshift_(d2))"""
+
+
+"""#4
+class shape:
+    def _init_ (self , a , b):
+        self.a = a
+        self.b = b
+
+    def _str_ (self):
+        return f"{self.a} , {self.b}"
+
+    def _gt_ (self , other):
+        return (self.a , self.b) > (other.a , other.b)
+
+    
+s1 = shape(90 , 11) >  shape(10 , 30)
+print(s1)"""
+
+
+"""#5
+class shape:
+    def _init_ (self , x , y):
+        self.x = x
+        self.y = y
+
+    def _str_ (self):
+        return f"{self.x} {self.y}"
+
+    def _lt_ (self , other):
+        self_mag = (self.x) + (self.y ) 
+        other_mag = (other.x) + (other.y)
+        return self_mag < other_mag
+    
+print(shape(1 , 1) < shape(2 , 3))
+print(shape(0.2 , --0.2) < shape(0.5 , 0.2))
+print(shape(1 , 1) < shape(1 , 1))"""
+
+#21 #MATH MODULE
+
+"""import math
+
+x = math.sqrt(64)
+print(x)
+
+y = math.ceil(5.8)
+print(y)
+
+z = math.floor(5.9)
+print(z)"""
+
+
+#22 #JSON
+
+"""import json
+
+x = '{"name" : "john" , "age" : 30 , "city" : "new york"}'
+y = json.loads(x)
+print(y)
+
+x = {"name" : "john" , "age" : 30 , "city" : "new york"}
+y = json.dumps(x["age"])
+print(y)
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+y = json.dumps(x)
+print(y)"""
+
+#23 #EXCEPTION HANDLING
+
+"""#1
+try:
+    a = 10
+    b = "string"
+    x= a+b
+    print(x)
+except NameError:
+    print("Variable x is not defined")
+except :
+    print("something else is wrong")"""
+
+"""#2
+try:
+    print("hello")
+except:
+    print("somethng went wromg")
+else:
+    print("nothing went wrong")"""
+
+"""#3
+try:
+    print(x)
+except:
+    print("something went wrong")
+finally:
+    print("the try except is finished")"""
+
+"""#4
+try:
+    f = open("demofile.txt")
+    try:
+        f.write("Lorum Ipsum")
+    except:
+        print("something went wrong when writing to the file")
+
+    finally:
+        f.close()
+except:
+    print("something went wrong while opening the file")"""
+
+"""#5
+x = -1
+if x < 0:
+    raise Exception("sorry no numbers below zero")"""
+
+
+"""x = 12
+if not type(x) is int:
+    raise TypeError("Only integers are allowed")"""
+
+"""def kelvintofahrenhite(temprature):
+   assert (temprature >=0 ), "colder than absolute zero"
+   return ((temprature - 273)*1.8)+32
+
+print(kelvintofahrenhite(273))
+print(int(kelvintofahrenhite(505.78)))
+print(kelvintofahrenhite(-15))"""
